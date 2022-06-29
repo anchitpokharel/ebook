@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>eBook-Keeping</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      <!--IMP CSS Files -->
+      <link href="assets/imp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!--  Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link rel="icon" href="./assets/img/logo.png" type="image/icon type">
+   </head>
+    <style>
+/* set the position of dropdown */
+.dropdown {
+     position: relative;
+     display: block;
+}
+/* set the size and position of button on web */
+.button {
+     padding: 8px 10px;
+     font-size: 16px;
+     font-weight:bold;
+     margin-left:15px;
+     border: 2px solid #9370db;
+     border-radius:8px;
+    background-color:#800080;
+     color:white;
+}
+.button:hover{
+     background-color:white;
+     color:#9370db;
+}
+
+/* provide css to background of list items */ 
+#list-items {
+    display: none;
+    position: absolute;
+   box-shadow:4px 0px 5px #800080;
+    min-width: 180px;
+    margin-left:75px;
+    color:white;
+     z-index:9999;
+}
+/* provide css to list items */ 
+#list-items a {
+     display: block;
+     font-size: 18px;
+     background-color: #9370db;
+     color:white;
+     text-decoration: none;
+     padding: 10px;
+    height:auto;
+     
+}
+</style>
+   <body>
+   <section id="topbar" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+         <div class="contact-info d-flex align-items-center">
+              <a href="tel: +61480097490" class="getstarted scrollto" target="_blank"><i class="bi bi-phone-fill phone-icon"></i> Wanna Talk?</a>
+         </div>
+         <div class="social-links d-none d-md-block">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+         </div>
+      </div>
+   </section>
+  <header id="header" class="d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center p-2" style="background-color:#9370db;">
+         <h1 class="logo me-auto " ><a href="/"><img src="./assets/img/logo.png" alt="logo"> eBook Keeping</a></h1>
+         <nav id="navbar" class="navbar">
+            <ul>
+               <li><a class="nav-link scrollto active" href="/">Home</a></li>
+               <!--<li><a class="nav-link scrollto" href="/#services">Services</a></li>-->
+               <li>
+                  <div class="dropdown">
+                  <button onclick="show_hide()" class="button">Services</button>
+                  <center>
+     
+                 <div id="list-items">
+                
+                <a href="invoice">Invocing </a>
+                <a href="payroll">Payroll</a>
+                 <a href="account-payable">Account Payable </a>
+                  <a href="reporting">Reporting</a>
+                <a href="reconciliation">Reconciliation </a>
+                 <a href="setup-training">Setup and Training </a>
+                 <a href="virtual-bookkeeping">Virtual book keeping </a>
+               
+                </div>
+                </center>
+
+               </li>
+                <li><a class="nav-link scrollto" href="/#about">About</a></li>
+               <li><a class="nav-link scrollto " href="/#pricing">Pricing</a></li>
+               <li><a class="nav-link scrollto " href="/#recent-blog-posts">Blogs</a></li>
+               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+               <!--<li><a class="getstarted scrollto" href="tel: +61480097490" target="_blank">Wanna Talk?</a></li>-->
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav>
+      </div>
+   </header>
+   <div class="container pt-5" >
+      <div class="row" id="hero">
+         <div class="col-lg-7 col-md-12 col-sm-12 my-3">
+            <p style="font-size: 1rem; font-weight: 900; color:grey;">For Better, Affordable and Fast Result.</p>
+            <h1 class="header-one">“Let us help you balance your book”</h1>
+            <p style="font-size: 1.5rem; font-weight: 900; color:grey;">Don’t have any accounting knowledge? Leave your work to us! </p>
+            <p style="text-align: justify;"> Booking keeping can be stressful and time-consuming task. Especially for small businesses, it is a hell of a task to maintain resources to do it properly.
+               That’s the reason why we are here, to not only assist you in knowing your numbers but also to help you understand your assets, liabilities and profits.
+               We will also guide you to figure about what these things mean for your business. If you want to change your business game, why wait?
+               Contact us, our professional team is eager to help you take your business to the next level. <span style="color:#A82C49;font-weight:900;">Ebookkeepingpro</span> provides services like Invoicing, Account Payable and other bookkeeping related services to people all over the world.
+            </p>
+            <a href="tel:+61480097490" target="_blank"><button type="button" class="service-homebtn">Call Now</button></a> 
+         </div>
+         <div class="col-lg-1"></div>
+         <div class="col-lg-4 col-md-12 col-sm-12  my-3">
+            <h2 class="textone">
+               We are at
+            </h2>
+            <h3 class="texttwo">
+               Your Service.
+            </h3>
+            <div class="card p-4  bg-white rounded shadow">
+             <form action="https://formcarry.com/s/ml1_mU2EPXh" method="post"  class="php-email-form">
+                     <div class="row">
+                        <div class="form-group col-md-6">
+                           <label for="name">Your Name</label>
+                           <input type="text" name="name" class="form-control"  required>
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                           <label for="name">Your Number</label>
+                           <input type="text" class="form-control" name="number"  required>
+                        </div>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Your Email</label>
+                        <input type="email" class="form-control" name="email"  required>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject"  required>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="2" required></textarea>
+                     </div>
+                     <div class="text-center py-2"><button type="submit" class="service-homebtn">Send Message</button></div>
+                  </form>
+                  </div>
+         </div>
+      </div>
+   </div>
+   <main id="main">
+     
+      <section id="services" class="services">
+         <div class="container">
+            <div class="section-title">
+               <h2>Services</h2>
+               <h6>Taking care of your bookkeeping is our business not yours, feel free to contact us.</h6>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box iconbox-blue">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                        </svg>
+                        <i class="bx bx-file"></i>
+                     </div>
+                     <h4>Account Payable</h4>
+                     <p>You already have plenty to do with your business. We will give you a hand in simplifying your complexities.</p>
+                     <a href="account-payable"><button type="button" class="service-homebtn my-3"> Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box iconbox-pink">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                        </svg>
+                        <i class="bx bx-tachometer"></i>
+                     </div>
+                     <h4>Month and year end reconciliation</h4>
+                     <p>A tiny error in balance sheet reconciliation can bring major problem in your business. We will help manage it without hassle and on time.</p>
+                     <a href="reconciliation"><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box iconbox-teal">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                        </svg>
+                        <i class="bx bx-arch"></i>
+                     </div>
+                     <h4>Payroll</h4>
+                     <p>It's all an easy task until something goes wrong. Let our experts make it easy and effortless for you.</p>
+                     <a href="payroll" ><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box iconbox-orange ">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                        </svg>
+                        <i class="bx bx-file"></i>
+                     </div>
+                     <h4>Invocing</h4>
+                     <p>Sending an invoice is crucial part of your business. To successfully create and send one, understanding it as whole is must. Leave that to us, we follow all the steps in creating a purposeful one.</p>
+                     <a href="invoice"><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box iconbox-red">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <i class="bx bx-slideshow"></i>
+                     </div>
+                     <h4>Setup and Training</h4>
+                     <p>Are you confused about ways to solve your business problems? Then no worries we have experts who can helps improve your business practices and give proper guidelines.</p>
+                     <a href="setup-training"><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box iconbox-yellow">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                        </svg>
+                        <i class="bx bx-layer"></i>
+                     </div>
+                     <h4>Month and year end reporting</h4>
+                     <p>You can work in ease and let us bear the burden of creating a  report that entails all the events in details. </p>
+                     <a href="reporting"><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box iconbox-pink">
+                     <div class="icon">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                        </svg>
+                        <i class="bx bx-file"></i>
+                     </div>
+                     <h4>Virtual bookkeeping</h4>
+                     <p>When your business is constantly growing, it becomes quite a task to keep your bookkeeping job under control.</p>
+                     <a href="virtual-bookkeeping" ><button type="button" class="service-homebtn my-3">Learn More</button></a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       <section id="about" class="about">
+         <div class="container">
+            <div class="section-title">
+               <h2>About Us</h2>
+               <h6>E-Bookkeepingpro is a rapidly expanding online accounting software that is incredibly simple to use. It allows you to make attractive invoices, track spending, and manage inventory without having to know anything about accounting.</h6>
+            </div>
+            <div class="row">
+               <div class="col-lg-6 order-1 order-lg-2">
+                  <img src="assets/img/about.webp" class="img-fluid" style="border-radius: 10%;border-left:3px solid #A82C49;border-right:3px solid #A82C49 ; " loading="lazy" alt="">
+               </div>
+               <div class="col-lg-6 pt-2 pt-lg-5 order-2 order-lg-1 content">
+                  <h6>
+                     Your accountant can readily access the transaction details. With just a few clicks, you can see what's going on in your business and make smarter decisions.
+                  </h6>
+                  <p class="fst-italic" style="text-align:justify">
+                     Our mission is to give exceptional service across the board. We have a clear vision and aspire to achieve the gold standard. We hope to be acknowledged as the finest brand by 2020. We have big ambitions, therefore we keep a careful eye on the job we produce for our clients.
+                     We are a fintech firm on a goal to provide an exceptional range of services at an accessible price, including startup legal services, CA support, licensing, corporate compliance, and finance outsourcing services.
+                     We have a clear vision and aspire to achieve the gold standard. We have big ambitions, therefore we pay special attention to the job we produce for our clients.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      
+      <section id="why-us" class="why-us">
+         <div class="container">
+            <div class="section-title">
+               <h2>Why Choose Us?</h2>
+               <h6>“Let us take your burden of book keeping, while you focus in growing your business.”</h6>
+            </div>
+            <div class="row no-gutters bg-white rounded shadow">
+               <div class="col-lg-4 col-md-6 content-item p-3">
+                  <div class="box">
+                     <span>01</span>
+                     <p>Its affordable than hiring an accountant in your company. Virtual services are considered of high quality.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 content-item p-3">
+                  <div class="box">
+                     <span>02</span>
+                     <p>Precision rate is high, where there is almost zero risk of errors, with our secure booking keeping services make sure of.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 content-item p-3">
+                  <div class="box">
+                     <span>03</span>
+                     <p>You only pay for the services that you seek. It is particularly created to meet the requirement of the customer.</p>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-md-12 content-item my-5">
+                  <div class="box p-2" style="border-bottom:3px solid brown;">
+                     <span> We are here to take bookkeeping off your plate:</span>
+                     <p>
+                     <ul>
+                        <li>You will have more time for your business</li>
+                        <li>Peace of mind : we help to track your work and help you know where your business stands.</li>
+                        <li>Confidence: when your books are on check you are confident and prepared for the taxes.</li>
+                     </ul>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <div class="review" id="review">
+         <div class="container">
+            <div class="section-title">
+               <h2 class="py-4 text-center">Clients review</h2>
+               <h6><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i> 4.4 Rating</h6>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 d-flex">
+                  <div class="card card-body flex-fill bg-white rounded shadow my-4 ">
+                     <img src="assets/img/th.jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <div class="card-body">
+                        <h1><i class='bx bxs-quote-left'></i></h1>
+                        <p>Really helpful using the service as I have very limited knowledge of accountancy so to speak with several different firms about what each could offer was invaluable.</p>
+                        <h6 style=" color:#A82C49"><b>Henry tagha</b> <br><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 d-flex">
+                  <div class="card card-body flex-fill bg-white rounded shadow">
+                     <img src="assets/img/th (1).jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <div class="card-body">
+                        <h1><i class='bx bxs-quote-left'></i></h1>
+                        <p>The service is very professional, quick and the quotes provided after a telephone conversation to exactly established what is needed. Secure service that I will highly recommend.</p>
+                        <h6 style=" color:#A82C49"><b>Daisy D.C</b> <br><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 d-flex">
+                  <div class="card card-body flex-fill bg-white rounded shadow my-4">
+                     <img src="assets/img/th.jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <div class="card-body">
+                        <h1><i class='bx bxs-quote-left'></i></h1>
+                        <p>First class service.
+                           No time waisting. 
+                           Very prompt response. 
+                           Allowed me to concentrate on other matters.Happy with your service
+                        </p>
+                        <h6 style=" color:#A82C49"><b>Devin Marli</b> <br><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half' ></i></h6>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+      <div class="demo10" id="pricing" style="background-color: #f1e9e9">
+         <div class="container" >
+            <div class="section-title">
+               <h2 class="py-4 text-center">Pricing Table</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-3 col-sm-6">
+                  <div class="pricingTable10">
+                     <div class="pricingTable-header">
+                        <h3 class="heading">Standard</h3>
+                        <span class="price-value">
+                        <span class="currency">$</span> 0
+                        <span class="month">/mo</span>
+                        </span>
+                     </div>
+                     <div class="pricing-content">
+                        <ul>
+                           <li>Comming soon</li>
+                           <!-- <li>50 Email Accounts</li>
+                              <li>50GB Monthly Bandwidth</li>
+                              <li>10 Subdomains</li>
+                              <li>15 Domains</li> -->
+                        </ul>
+                        <a href="#contact" class="read">Get Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="pricingTable10">
+                     <div class="pricingTable-header">
+                        <h3 class="heading">Business</h3>
+                        <span class="price-value">
+                        <span class="currency">$</span> 0
+                        <span class="month">/mo</span>
+                        </span>
+                     </div>
+                     <div class="pricing-content">
+                        <ul>
+                           <li>Comming soon</li>
+                           <!-- <li>60 Email Accounts</li>
+                              <li>60GB Monthly Bandwidth</li>
+                              <li>15 Subdomains</li>
+                              <li>20 Domains</li> -->
+                        </ul>
+                        <a href="#contact" class="read">Get Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="pricingTable10">
+                     <div class="pricingTable-header">
+                        <h3 class="heading">Premium</h3>
+                        <span class="price-value">
+                        <span class="currency">$</span> 0
+                        <span class="month">/mo</span>
+                        </span>
+                     </div>
+                     <div class="pricing-content">
+                        <ul>
+                           <li>Comming soon</li>
+                           <!-- <li>70 Email Accounts</li>
+                              <li>70GB Monthly Bandwidth</li>
+                              <li>20 Subdomains</li>
+                              <li>25 Domains</li> -->
+                        </ul>
+                        <a href="#contact" class="read">Get Now</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="pricingTable10">
+                     <div class="pricingTable-header">
+                        <h3 class="heading">Extra</h3>
+                        <span class="price-value">
+                        <span class="currency">$</span> 0
+                        <span class="month">/mo</span>
+                        </span>
+                     </div>
+                     <div class="pricing-content">
+                        <ul>
+                           <li>comming soon</li>
+                           <!-- <li>80 Email Accounts</li>
+                              <li>80GB Monthly Bandwidth</li>
+                              <li>25 Subdomains</li>
+                              <li>30 Domains</li> -->
+                        </ul>
+                        <a href="#contact" class="read">Get Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <section id="recent-blog-posts" class="recent-blog-posts">
+         <div class="container" data-aos="fade-up">
+            <div class="section-title">
+               <h2>Blog</h2>
+               <p>Recent posts from our Blog</p>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 d-flex">
+                  <div class="card ">
+                     <div class="card-body flex-fill">
+                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <span class="post-date">Tue, September 15</span>
+                        <h3 class="post-title">Comming soon</h3>
+                        <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 d-flex">
+                  <div class="card ">
+                     <div class="card-body flex-fill">
+                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <span class="post-date">Fri, August 28</span>
+                        <h3 class="post-title">Comming soon</h3>
+                        <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 d-flex">
+                  <div class="card ">
+                     <div class="card-body flex-fill">
+                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <span class="post-date">Mon, July 11</span>
+                        <h3 class="post-title">Comming soon</h3>
+                        <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     
+     
+      <div  class="wrappers bg-white rounded shadow ">
+         <div class="h2 text-center fw-bold" style="color: #A82C49;">Frequently Asked Questions</div>
+         <div class="accordion accordion-flush border-top border-start border-end" id="myAccordion">
+            <div class="accordion-item ">
+               <h2 class="accordion-header " id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> What servies are provided? </button> </h2>
+               <div id="flush-collapseOne" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">Adding Snippets</a></li>
+                        <li><a href="#">Accessing Color Palette</a></li>
+                        <li><a href="#">Searching Snippets</a></li>
+                        <li><a href="#">How to use online editor tools</a></li>
+                        <li><a href="#">Upgrading Pro</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Know about our organization </button> </h2>
+               <div id="flush-collapseTwo" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">How to upgrade to pro</a></li>
+                        <li><a href="#">Benifits of Pro</a></li>
+                        <li><a href="#">Payment methods to get Pro</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Who will I be working with? </button> </h2>
+               <div id="flush-collapseThree" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">How to use Pro Online Editor</a></li>
+                        <li><a href="#">Know Gradient generator</a></li>
+                        <li><a href="#">Using Beautifier</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"> Am I in the right path?</button> </h2>
+               <div id="flush-collapseFour" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">How to download snippets</a></li>
+                        <li><a href="#">Donate to Author</a></li>
+                        <li><a href="#">Donation methods</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"> Expert Qualifications? </button> </h2>
+               <div id="flush-collapseFive" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">Adding icons to snippets</a></li>
+                        <li><a href="#">Fontawesome Icons</a></li>
+                        <li><a href="#">Material Design</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> Policy & copyrights of the firm </button> </h2>
+               <div id="flush-collapseSix" class="accordion-collapse collapse border-0" aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                  <div class="accordion-body p-0">
+                     <ul class="list-unstyled m-0">
+                        <li><a href="#">BBBootstrap Guidelines</a></li>
+                        <li><a href="#">BBBootstrap Policies</a></li>
+                        <li><a href="#">Copyright and right management</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section id="contact" class="contact">
+         <div class="container">
+            <div class="section-title">
+               <h2 style="color: #A82C49;">Contact Us</h2>
+               <h5>We are 24/7 available in your service feel free to contacst us.The Contact details are mentioned below or you can fill the form directly.</h5>
+            </div>
+            <div class="row">
+               <div class="col-lg-4" style="padding-top:15px;">
+                  <h2>Contact details:</h2>
+                  <div class="info">
+                     <div class="address">
+                        <i class="addr"><img src="./assets/img/contact/location.png" alt=""></i>
+                        <h4>Main Office:</h4>
+                        <p>Australia</p>
+                     </div>
+                     <div class="email">
+                        <i class="addr"><img src="./assets/img/contact/open-mail.png" alt=""></i>
+                        <h4>Email:</h4>
+                        <a href="mailto:SomeMail@blabla.com" target="_blank">
+                           <p>info@ebookkeepingpro.com</p>
+                        </a>
+                     </div>
+                     <div class="phone">
+                        <i class="addr"><img src="./assets/img/contact/phone-call.png" alt=""></i>
+                        <h4>Call:</h4>
+                        <p>+61 480097490</p>
+                        <!--<div class="card p-2" >-->
+                        <!--   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2228626787833!2d85.33026571491631!3d27.710404482790544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190b6cfae8cd%3A0xb54327d56a797ef6!2sGyaneshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1651395834017!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
+                        <!--</div>-->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 mt-5 mt-lg-0 d-flex align-items-stretch">
+               </div>
+               <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
+                  <form action="https://formcarry.com/s/ml1_mU2EPXh" method="post"  class="php-email-form">
+                     <div class="row">
+                        <div class="form-group col-md-6">
+                           <label for="name">Your Name</label>
+                           <input type="text" name="name" class="form-control"  required>
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                           <label for="name">Your Number</label>
+                           <input type="text" class="form-control" name="number"  required>
+                        </div>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Your Email</label>
+                        <input type="email" class="form-control" name="email"  required>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject"  required>
+                     </div>
+                     <div class="form-group mt-3">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="7" required></textarea>
+                     </div>
+                     <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer id="footer">
+      <div class="container">
+         <h3>eBook-Keping</h3>
+         <p>Follow Us On Social-site</p>
+         <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+         </div>
+         <div class="copyright">
+            &copy; Copyright <strong><span>2022</span></strong>. All Rights Reserved
+         </div>
+         <div class="credits">
+            Designed by eBook Keeping
+         </div>
+      </div>
+   </footer>
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+   <!--Sabal CSS Down-->
+   <!--<link href="assets/imp/animate.css/animate.min.css" rel="stylesheet">-->
+   <link href="assets/imp/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="assets/imp/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <!--<link href="assets/imp/glightbox/css/glightbox.min.css" rel="stylesheet">-->
+   <link href="assets/imp/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <script src="assets/imp/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!--<script src="assets/imp/glightbox/js/glightbox.min.js"></script>-->
+   <!--<script src="assets/imp/isotope-layout/isotope.pkgd.min.js"></script>-->
+   <script src="assets/js/main.js"></script>
+    <script>
+      //show and hide dropdown list item on button click
+      function show_hide() {
+         var click = document.getElementById("list-items");
+         if(click.style.display ==="none") {
+            click.style.display ="block";
+         } else {
+            click.style.display ="none";
+         } 
+      }
+   </script>
+   </body>
+</html>
