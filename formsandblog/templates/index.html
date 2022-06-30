@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -9,54 +10,55 @@
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
       <!--IMP CSS Files -->
-      <link href="assets/imp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{% static 'assets/imp/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+      {% comment %} <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' %}" rel="stylesheet"> {% endcomment %}
       <!--  Main CSS File -->
-      <link href="assets/css/style.css" rel="stylesheet">
-      <link rel="icon" href="./assets/img/logo.png" type="image/icon type">
+      <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+      <link rel="icon" href="{% static '/assets/img/logo.png' %}" type="image/icon type">
    </head>
-    <style>
-/* set the position of dropdown */
-.dropdown {
-     position: relative;
-     display: block;
-}
-/* set the size and position of button on web */
-.button {
-     padding: 8px 10px;
-     font-size: 16px;
-     font-weight:bold;
-     margin-left:15px;
-     border: 2px solid #9370db;
-     border-radius:8px;
-    background-color:#800080;
-     color:white;
-}
-.button:hover{
-     background-color:white;
-     color:#9370db;
-}
+<style>
+   /* set the position of dropdown */
+   .dropdown {
+      position: relative;
+      display: block;
+   }
+   /* set the size and position of button on web */
+   .button {
+      padding: 8px 10px;
+      font-size: 16px;
+      font-weight:bold;
+      margin-left:15px;
+      border: 2px solid #9370db;
+      border-radius:8px;
+      background-color:#800080;
+      color:white;
+   }
+   .button:hover{
+      background-color:white;
+      color:#9370db;
+   }
 
-/* provide css to background of list items */ 
-#list-items {
-    display: none;
-    position: absolute;
-   box-shadow:4px 0px 5px #800080;
-    min-width: 180px;
-    margin-left:75px;
-    color:white;
-     z-index:9999;
-}
-/* provide css to list items */ 
-#list-items a {
-     display: block;
-     font-size: 18px;
-     background-color: #9370db;
-     color:white;
-     text-decoration: none;
-     padding: 10px;
-    height:auto;
-     
-}
+   /* provide css to background of list items */ 
+   #list-items {
+      display: none;
+      position: absolute;
+      box-shadow:4px 0px 5px #800080;
+      min-width: 180px;
+      margin-left:75px;
+      color:white;
+      z-index:9999;
+   }
+   /* provide css to list items */ 
+   #list-items a {
+      display: block;
+      font-size: 18px;
+      background-color: #9370db;
+      color:white;
+      text-decoration: none;
+      padding: 10px;
+      height:auto;
+      
+   }
 </style>
    <body>
    <section id="topbar" class="d-flex align-items-center">
@@ -269,7 +271,7 @@
             </div>
             <div class="row">
                <div class="col-lg-6 order-1 order-lg-2">
-                  <img src="assets/img/about.webp" class="img-fluid" style="border-radius: 10%;border-left:3px solid #A82C49;border-right:3px solid #A82C49 ; " loading="lazy" alt="">
+                  <img src="{% static 'assets/img/about.webp' %}" class="img-fluid" style="border-radius: 10%;border-left:3px solid #A82C49;border-right:3px solid #A82C49 ; " loading="lazy" alt="">
                </div>
                <div class="col-lg-6 pt-2 pt-lg-5 order-2 order-lg-1 content">
                   <h6>
@@ -336,7 +338,7 @@
             <div class="row">
                <div class="col-lg-4 d-flex">
                   <div class="card card-body flex-fill bg-white rounded shadow my-4 ">
-                     <img src="assets/img/th.jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <img src="{% static 'assets/img/th.jpg' %}" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
                      <div class="card-body">
                         <h1><i class='bx bxs-quote-left'></i></h1>
                         <p>Really helpful using the service as I have very limited knowledge of accountancy so to speak with several different firms about what each could offer was invaluable.</p>
@@ -346,7 +348,7 @@
                </div>
                <div class="col-lg-4 d-flex">
                   <div class="card card-body flex-fill bg-white rounded shadow">
-                     <img src="assets/img/th (1).jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <img src="{% static 'assets/img/th (1).jpg' %}" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
                      <div class="card-body">
                         <h1><i class='bx bxs-quote-left'></i></h1>
                         <p>The service is very professional, quick and the quotes provided after a telephone conversation to exactly established what is needed. Secure service that I will highly recommend.</p>
@@ -356,7 +358,7 @@
                </div>
                <div class="col-lg-4 d-flex">
                   <div class="card card-body flex-fill bg-white rounded shadow my-4">
-                     <img src="assets/img/th.jpg" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
+                     <img src="{% static 'assets/img/th.jpg' %}" class="img-fluid p-3 mx-auto" style="height:50%;width:50%" alt="">
                      <div class="card-body">
                         <h1><i class='bx bxs-quote-left'></i></h1>
                         <p>First class service.
@@ -477,7 +479,7 @@
                <div class="col-lg-4 d-flex">
                   <div class="card ">
                      <div class="card-body flex-fill">
-                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <div class="post-img"><img src="{% static 'assets/img/about.webp' %}" class="img-fluid" alt=""></div>
                         <span class="post-date">Tue, September 15</span>
                         <h3 class="post-title">Comming soon</h3>
                         <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -487,7 +489,7 @@
                <div class="col-lg-4 d-flex">
                   <div class="card ">
                      <div class="card-body flex-fill">
-                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <div class="post-img"><img src="{% static 'assets/img/about.webp' %}" class="img-fluid" alt=""></div>
                         <span class="post-date">Fri, August 28</span>
                         <h3 class="post-title">Comming soon</h3>
                         <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -497,7 +499,7 @@
                <div class="col-lg-4 d-flex">
                   <div class="card ">
                      <div class="card-body flex-fill">
-                        <div class="post-img"><img src="assets/img/about.webp" class="img-fluid" alt=""></div>
+                        <div class="post-img"><img src="{% static 'assets/img/about.webp' %}" class="img-fluid" alt=""></div>
                         <span class="post-date">Mon, July 11</span>
                         <h3 class="post-title">Comming soon</h3>
                         <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
@@ -599,19 +601,19 @@
                   <h2>Contact details:</h2>
                   <div class="info">
                      <div class="address">
-                        <i class="addr"><img src="./assets/img/contact/location.png" alt=""></i>
+                        <i class="addr"><img src="{% static './assets/img/contact/location.png' %}" alt=""></i>
                         <h4>Main Office:</h4>
                         <p>Australia</p>
                      </div>
                      <div class="email">
-                        <i class="addr"><img src="./assets/img/contact/open-mail.png" alt=""></i>
+                        <i class="addr"><img src="{% static './assets/img/contact/open-mail.png' %}" alt=""></i>
                         <h4>Email:</h4>
                         <a href="mailto:SomeMail@blabla.com" target="_blank">
                            <p>info@ebookkeepingpro.com</p>
                         </a>
                      </div>
                      <div class="phone">
-                        <i class="addr"><img src="./assets/img/contact/phone-call.png" alt=""></i>
+                        <i class="addr"><img src="{% static './assets/img/contact/phone-call.png' %}" alt=""></i>
                         <h4>Call:</h4>
                         <p>+61 480097490</p>
                         <!--<div class="card p-2" >-->
@@ -672,25 +674,18 @@
    </footer>
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <!--Sabal CSS Down-->
-   <!--<link href="assets/imp/animate.css/animate.min.css" rel="stylesheet">-->
-   <link href="assets/imp/boxicons/css/boxicons.min.css" rel="stylesheet">
-   <link href="assets/imp/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-   <!--<link href="assets/imp/glightbox/css/glightbox.min.css" rel="stylesheet">-->
-   <link href="assets/imp/swiper/swiper-bundle.min.css" rel="stylesheet">
-   <script src="assets/imp/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <!--<script src="assets/imp/glightbox/js/glightbox.min.js"></script>-->
-   <!--<script src="assets/imp/isotope-layout/isotope.pkgd.min.js"></script>-->
-   <script src="assets/js/main.js"></script>
-    <script>
-      //show and hide dropdown list item on button click
-      function show_hide() {
-         var click = document.getElementById("list-items");
-         if(click.style.display ==="none") {
-            click.style.display ="block";
-         } else {
-            click.style.display ="none";
-         } 
-      }
-   </script>
+   <!--<link href="{% static 'assets/imp/animate.css/animate.min.css' %}" rel="stylesheet">-->
+   <link href="{% static 'assets/imp/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+   <link href="{% static 'assets/imp/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+   <!--<link href="{% static 'assets/imp/glightbox/css/glightbox.min.css' %}" rel="stylesheet">-->
+   <link href="{% static 'assets/imp/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+   <script src="{% static 'assets/imp/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+   {% comment %} <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js' %}"></script> {% endcomment %}
+   {% comment %} <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' %}"></script> {% endcomment %}
+   
+   <!--<script src="{% static 'assets/imp/glightbox/js/glightbox.min.js' %}"></script>-->
+   <!--<script src="{% static 'assets/imp/isotope-layout/isotope.pkgd.min.js' %}"></script>-->
+   <script src="{% static 'assets/js/main.js' %}"></script>
+   
    </body>
 </html>
