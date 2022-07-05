@@ -58,14 +58,17 @@
       padding: 10px;
       height:auto;
       
+   
    }
 </style>
-   <body>
+
+
+<body>
    <section id="topbar" class="d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
          <div class="contact-info d-flex align-items-center">
               <a href="tel: +61480097490" class="getstarted scrollto" target="_blank"><i class="bi bi-phone-fill phone-icon"></i> Wanna Talk?</a>
-         </div>
+            </div>
          <div class="social-links d-none d-md-block">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -75,7 +78,7 @@
    </section>
   <header id="header" class="d-flex align-items-center">
       <div class="container-fluid d-flex align-items-center p-2" style="background-color:#9370db;">
-         <h1 class="logo me-auto " ><a href="/"><img src="./assets/img/logo.png" alt="logo"> eBook Keeping</a></h1>
+         <h1 class="logo me-auto " ><a href="/"><img src="{% static './assets/img/logo.png' %}" alt="logo"> eBook Keeping</a></h1>
          <nav id="navbar" class="navbar">
             <ul>
                <li><a class="nav-link scrollto active" href="/">Home</a></li>
@@ -109,6 +112,8 @@
          </nav>
       </div>
    </header>
+
+
    <div class="container pt-5" >
       <div class="row" id="hero">
          <div class="col-lg-7 col-md-12 col-sm-12 my-3">
@@ -123,6 +128,7 @@
             <a href="tel:+61480097490" target="_blank"><button type="button" class="service-homebtn">Call Now</button></a> 
          </div>
          <div class="col-lg-1"></div>
+         
          <div class="col-lg-4 col-md-12 col-sm-12  my-3">
             <h2 class="textone">
                We are at
@@ -130,33 +136,10 @@
             <h3 class="texttwo">
                Your Service.
             </h3>
-            <div class="card p-4  bg-white rounded shadow">
-             <form action="https://formcarry.com/s/ml1_mU2EPXh" method="post"  class="php-email-form">
-                     <div class="row">
-                        <div class="form-group col-md-6">
-                           <label for="name">Your Name</label>
-                           <input type="text" name="name" class="form-control"  required>
-                        </div>
-                        <div class="form-group col-md-6 mt-3 mt-md-0">
-                           <label for="name">Your Number</label>
-                           <input type="text" class="form-control" name="number"  required>
-                        </div>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Your Email</label>
-                        <input type="email" class="form-control" name="email"  required>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Subject</label>
-                        <input type="text" class="form-control" name="subject"  required>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Message</label>
-                        <textarea class="form-control" name="message" rows="2" required></textarea>
-                     </div>
-                     <div class="text-center py-2"><button type="submit" class="service-homebtn">Send Message</button></div>
-                  </form>
-                  </div>
+            <div class="card p-4  bg-white rounded shadow">               
+               {% include 'snippets/contact_us.html' %}
+               
+            </div>
          </div>
       </div>
    </div>
@@ -263,7 +246,9 @@
             </div>
          </div>
       </section>
-       <section id="about" class="about">
+
+
+      <section id="about" class="about">
          <div class="container">
             <div class="section-title">
                <h2>About Us</h2>
@@ -286,8 +271,8 @@
             </div>
          </div>
       </section>
-      
-      
+
+
       <section id="why-us" class="why-us">
          <div class="container">
             <div class="section-title">
@@ -328,7 +313,6 @@
             </div>
          </div>
       </section>
-      
       <div class="review" id="review">
          <div class="container">
             <div class="section-title">
@@ -374,7 +358,7 @@
          </div>
       </div>
       
-      
+
       <div class="demo10" id="pricing" style="background-color: #f1e9e9">
          <div class="container" >
             <div class="section-title">
@@ -428,8 +412,8 @@
                      <div class="pricingTable-header">
                         <h3 class="heading">Premium</h3>
                         <span class="price-value">
-                        <span class="currency">$</span> 0
-                        <span class="month">/mo</span>
+                           <span class="currency">$</span> 0
+                           <span class="month">/mo</span>
                         </span>
                      </div>
                      <div class="pricing-content">
@@ -468,7 +452,8 @@
             </div>
          </div>
       </div>
-     
+
+
       <section id="recent-blog-posts" class="recent-blog-posts">
          <div class="container" data-aos="fade-up">
             <div class="section-title">
@@ -509,8 +494,8 @@
             </div>
          </div>
       </section>
-     
-     
+
+
       <div  class="wrappers bg-white rounded shadow ">
          <div class="h2 text-center fw-bold" style="color: #A82C49;">Frequently Asked Questions</div>
          <div class="accordion accordion-flush border-top border-start border-end" id="myAccordion">
@@ -590,6 +575,7 @@
             </div>
          </div>
       </div>
+      
       <section id="contact" class="contact">
          <div class="container">
             <div class="section-title">
@@ -625,35 +611,13 @@
                <div class="col-lg-3 mt-5 mt-lg-0 d-flex align-items-stretch">
                </div>
                <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
-                  <form action="https://formcarry.com/s/ml1_mU2EPXh" method="post"  class="php-email-form">
-                     <div class="row">
-                        <div class="form-group col-md-6">
-                           <label for="name">Your Name</label>
-                           <input type="text" name="name" class="form-control"  required>
-                        </div>
-                        <div class="form-group col-md-6 mt-3 mt-md-0">
-                           <label for="name">Your Number</label>
-                           <input type="text" class="form-control" name="number"  required>
-                        </div>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Your Email</label>
-                        <input type="email" class="form-control" name="email"  required>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Subject</label>
-                        <input type="text" class="form-control" name="subject"  required>
-                     </div>
-                     <div class="form-group mt-3">
-                        <label for="name">Message</label>
-                        <textarea class="form-control" name="message" rows="7" required></textarea>
-                     </div>
-                     <div class="text-center"><button type="submit">Send Message</button></div>
-                  </form>
+                  {% include 'snippets/contact_us.html' %}
                </div>
             </div>
          </div>
       </section>
+
+
    </main>
    <footer id="footer">
       <div class="container">
