@@ -10,4 +10,5 @@ urlpatterns = [
     path('reporting/', views.reporting),
     path('setup_training/', views.setup_training),
     path('virtual_bookkeeping/', views.virtual_bookkeeping),
+    path('create_order/', views.create_order, name='create_order'),
 ]
