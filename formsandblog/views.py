@@ -22,10 +22,10 @@ def reporting(request):
     return render(request, 'reporting.html')
 
 def setup_training(request):
-    return render(request, 'setup-training.html')
+    return render(request, 'setup_training.html')
 
 def virtual_bookkeeping(request):
-    return render(request, 'virtual-bookkeeping.html')
+    return render(request, 'virtual_bookkeeping.html')
 
 def create_order(request):
     if request.method == 'POST':

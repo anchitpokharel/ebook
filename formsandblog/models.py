@@ -8,4 +8,4 @@ class Contact_us(models.Model):
     your_email = models.EmailField(max_length=255)
     subject = models.CharField(max_length=255)
     message = models.TextField(max_length=255)
-    flag = models.CharField(max_length=50, blank=True)
+    flag = models.CharField(max_length=50, blank=True, editable=False)
