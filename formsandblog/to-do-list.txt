@@ -1,0 +1,15 @@
+make model for blog where:
+
+title
+meta-description-for-title
+author
+image
+alt-field for image
+slug
+description (add summernote to the description field)
+date-created
+category
+breadcrumb
+
+
+add a search function for blog:
