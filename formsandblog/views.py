@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from formsandblog.models import Contact_us
+from formsandblog.models import Contact_us, Blog, Category
 
 # Create your views here.
 def index(request):
@@ -42,3 +42,8 @@ def create_order(request):
         save_obj = Contact_us(your_name=your_name, your_number=your_number, your_email=your_email, subject=subject, message=message, flag="")
         save_obj.save()        
     return render(request, f'{splitted_flag_path}.html')
+
+def blog_post(request, id):
+    query_set = Blog.objects.select_related('author', 'category').get(pk=id)
+    category = Category.objects.all()
+    return render(request, 'blogpost/blogpost.html', {'query_set': query_set, 'category': category})
